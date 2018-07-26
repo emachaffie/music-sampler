@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "babel": "^6.23.0",
+    "eslint": "^5.2.0",
+    "jquery": "^3.3.1",
+    "parcel": "^1.9.7",
+    "sass": "^1.10.1",
+    "superagent": "^3.8.3"
+  },
+  "name": "music-sampler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/emachaffie/music-sampler.git",
+  "author": "emachaffie <emachaffie@gmail.com>",
+  "license": "MIT"
+}
