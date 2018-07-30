@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 20px 25px;
+  min-width: 400px;
+  font-family: 'Average Sans', sans-serif; }
+
+header {
+  background-color: #463F3A;
+  padding: 20px;
+  border-radius: 10px 10px 0 0; }
+
+h1 {
+  color: #26211E;
+  font-family: 'Merriweather', serif;
+  font-weight: 900; }
+
+h3 {
+  text-align: center;
+  color: #F4F3EE; }
+
+.header-text-div {
+  background-image: url("headerbackground.665120d3.png");
+  background-size: cover;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 10px; }
+
+audio {
+  margin: 0;
+  width: 100%;
+  margin: auto; }
+
+#soundbar-div {
+  background: linear-gradient(#FFF, #BCB8B1 5%, #8A817C 30%, #8A817C 70%, #BCB8B1 95%, #FFF);
+  padding: 30px;
+  margin: 0 0 20px 0;
+  border-radius: 10px; }
+  #soundbar-div p {
+    padding: 10px 0 0 0;
+    margin: 0; }
+
+.flag {
+  width: 30px; }
+
+#jp-searchform-div, #us-searchform-div {
+  padding-bottom: 40px;
+  color: #F4F3EE; }
+
+#us-searchform-div {
+  padding-top: 30px; }
+
+#searchforms {
+  text-justify: center;
+  padding-bottom: 20px; }
+  #searchforms input {
+    width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    line-height: 1.3rem; }
+  #searchforms button {
+    line-height: 1.3rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    background: radial-gradient(#dbdbdb, #efeaea, #fcf7f7); }
+  #searchforms p {
+    display: inline; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 90%; }
+
+main {
+  background-color: #D2CABC;
+  padding: 10px 30px;
+  border-radius: 0 0 10px 10px;
+  margin-top: 0px; }
+
+.container {
+  padding-top: 0px; }
+
+#search-results-div {
+  display: flex;
+  flex-wrap: wrap; }
+
+.album-div, .featured-div {
+  margin: 10px 20px;
+  padding: 5px 10px;
+  background-color: #F4F3EE;
+  border-radius: 4px;
+  flex-grow: none;
+  width: 150px; }
+  .album-div :hover, .featured-div :hover {
+    cursor: pointer; }
+  .album-div .album-img, .featured-div .album-img {
+    margin-left: 15px;
+    margin-top: 5px; }
+  .album-div .artistname, .featured-div .artistname {
+    font-weight: 700;
+    text-align: center;
+    padding: 4px;
+    margin: 0; }
+  .album-div .songtitle, .featured-div .songtitle {
+    text-align: center;
+    padding: 4px;
+    margin: 0; }
+
+.album-img {
+  width: 100px; }
+
+#featured-songs {
+  display: flex;
+  flex-wrap: wrap; }
