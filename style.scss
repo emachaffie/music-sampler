@@ -7,6 +7,7 @@ body {
   min-width: 400px;
   font-family: 'Average Sans', sans-serif;
 }
+
 // Header 
 
 header {
@@ -120,7 +121,6 @@ main {
 }
 
 #search-results-div {
-  // background: #F4F3EE;
   display: flex;
   flex-wrap: wrap;
 }
@@ -167,5 +167,4 @@ main {
 #featured-songs {
   display: flex;
   flex-wrap: wrap;
-
 }
