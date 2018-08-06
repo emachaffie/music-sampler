@@ -1,0 +1,127 @@
+[debug] [2018-08-06T19:15:52.714Z] ----------------------------------------------------------------------
+[debug] [2018-08-06T19:15:52.716Z] Command:       /usr/local/Cellar/node/10.7.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-08-06T19:15:52.717Z] CLI Version:   4.0.0
+[debug] [2018-08-06T19:15:52.717Z] Platform:      darwin
+[debug] [2018-08-06T19:15:52.717Z] Node Version:  v10.7.0
+[debug] [2018-08-06T19:15:52.717Z] Time:          Mon Aug 06 2018 15:15:52 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-06T19:15:52.718Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-06T19:15:52.730Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-06T19:15:52.731Z] > authorizing via signed-in user
+[debug] [2018-08-06T19:15:52.734Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/multilingual-melodies  
+  
+ Mon Aug 06 2018 15:15:52 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-06T19:15:53.135Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-06T19:15:53.136Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/multilingual-melodies/tokens  
+  
+ Mon Aug 06 2018 15:15:53 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-06T19:15:53.569Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'multilingual-melodies'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-08-06T19:15:56.213Z] >>> HTTP REQUEST PUT https://multilingual-melodies.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": true,
+    ".write": false
+  }
+} 
+ Mon Aug 06 2018 15:15:56 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-06T19:15:57.619Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database multilingual-melodies is valid
+[debug] [2018-08-06T19:15:57.621Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "~5.13.0",
+    "firebase-functions": "^2.0.0"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-08-06T19:15:57.622Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/multilingual-melodies?view=CONSUMER_VIEW  
+  
+ Mon Aug 06 2018 15:15:57 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-06T19:15:57.622Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/multilingual-melodies?view=CONSUMER_VIEW  
+  
+ Mon Aug 06 2018 15:15:57 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-06T19:15:58.489Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-06T19:15:58.643Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2018-08-06T19:15:58.644Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/multilingual-melodies  
+  
+ Mon Aug 06 2018 15:15:58 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-06T19:15:58.958Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-06T19:15:58.958Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/321486964821:getServerAppConfig  
+  
+ Mon Aug 06 2018 15:15:58 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-06T19:15:59.335Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2018-08-06T19:15:59.339Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/multilingual-melodies/configs  
+  
+ Mon Aug 06 2018 15:15:59 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-06T19:15:59.596Z] <<< HTTP RESPONSE 200
+[info] i  functions: packaged functions (40.17 KB) for uploading
+[debug] [2018-08-06T19:15:59.773Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/multilingual-melodies/locations/us-central1/functions:generateUploadUrl  
+  
+ Mon Aug 06 2018 15:15:59 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-06T19:16:00.218Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-06T19:16:00.219Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-5a4bcd12-27d4-4a41-99f5-e68939ee6b5f/1df05c79-e5a0-463a-b10e-cbddfcf32e3d.zip?GoogleAccessId=service-321486964821@gcf-admin-robot.iam.gserviceaccount.com&Expires=1533584656&Signature=XNVq11ixi3eAZ7r5c7DBTJnqD7hJlESHHKffneTvGH9qEvqSSysiPwz%2F0379%2Fglm0%2FTaJex9FsJDPqj7%2BdYvN0mdUBTWYC63pKX5Pf7NmlEfoWZOFmpfMBy7jlVUrlyXOk%2BdWMvjhWgis615ofnetXOqRV%2FTikiT96WbGAQpMqTwwyPgCqvQCySpL%2Brdy1Gx%2FGBmctGRufETAa9cDXiWY5A%2B72%2B4snO3wf6wpTPR2yjzgQcqlzMm4TjDCEkWLNia4kwXzztnsaoIUHsSmUsfCwc1aLPmylE2v88iBcjR8TkoqjGlFvpNx%2FMM6br4MdR2gXUuBhZ6o0H8M%2F%2FVYnUrpA%3D%3D  
+ ReadStream {
+  _readableState:
+   ReadableState {
+     objectMode: false,
+     highWaterMark: 65536,
+     buffer: BufferList { length: 1 },
+     length: 41131,
+     pipes: null,
+     pipesCount: 0,
+     flowing: null,
+     ended: true,
+     endEmitted: false,
+     reading: false,
+     sync: false,
+     needReadable: false,
+     emittedReadable: true,
+     readableListening: false,
+     resumeScheduled: false,
+     emitClose: false,
+     destroyed: false,
+     defaultEncoding: 'utf8',
+     awaitDrain: 0,
+     readingMore: false,
+     decoder: null,
+     encoding: null },
+  readable: true,
+  domain: null,
+  _events: { end: [Function] },
+  _eventsCount: 1,
+  _maxListeners: undefined,
+  path:
+   '/var/folders/1j/wk6k7b_d6lz_2mk18sjhhsph0000gn/T/firebase-functions-63020yRG03o4xR7Yb.zip',
+  fd: 19,
+  flags: 'r',
+  mode: 438,
+  start: undefined,
+  end: Infinity,
+  autoClose: true,
+  pos: undefined,
+  bytesRead: 41131,
+  closed: false } 
+ Mon Aug 06 2018 15:16:00 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-08-06T19:16:00.869Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: functions folder uploaded successfully
+[info] i  hosting: preparing / directory for upload...
+[debug] [2018-08-06T19:16:02.330Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/multilingual-melodies/uploads/-LJFeJzOv2hg0UyAeWVN?fileCount=239&message=  
+  
+ Mon Aug 06 2018 15:16:02 GMT-0400 (Eastern Daylight Time)
